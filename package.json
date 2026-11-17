@@ -1,0 +1,18 @@
+{
+  "name": "black-genial-2026",
+  "version": "1.0.0",
+  "description": "Página de Vendas Black Genial 2026 | Genial Vestibulares",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,440 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #020817;
+  --bg-secondary: #06132B;
+  --bg-tertiary: #0A1D3B;
+
+  --surface-primary: #0B1B32;
+  --surface-secondary: #102744;
+
+  --blue-primary: #049CFE;
+  --blue-electric: #087CFF;
+
+  --orange-primary: #FF7900;
+  --orange-light: #FF9A24;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #B9C9DF;
+
+  --border-subtle: rgba(4, 156, 254, 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #020817;
+  }
+
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #FFFFFF;
+    background-color: #020817;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #049CFE;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Utilities for Dark Cinematic & High-Tech Atmosphere */
+@layer components {
+  /* Container Editorial */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Grid Tecnológico Sutil para Profundidade de Fundo */
+  .bg-tech-grid {
+    background-image: 
+      linear-gradient(to right, rgba(4, 156, 254, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(4, 156, 254, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-tech-dots {
+    background-image: radial-gradient(rgba(4, 156, 254, 0.09) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* Tagline/Brand pill - High-tech Dark */
+  .brand-pill-dark {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase text-brand-blue backdrop-blur-md;
+    background: linear-gradient(135deg, rgba(12, 27, 42, 0.95) 0%, rgba(16, 35, 55, 0.85) 100%);
+    border: 1px solid rgba(4, 156, 254, 0.35);
+    box-shadow: 0 0 20px rgba(4, 156, 254, 0.20), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* Primary Conversion Button - High Tech Glow */
+  .btn-primary-dark {
+    @apply inline-flex items-center justify-center font-bold text-white bg-brand-orange hover:bg-brand-orange-hover active:scale-[0.98] transition-all duration-300 rounded-xl px-8 py-4 text-base sm:text-lg;
+    box-shadow: 0 8px 25px -4px rgba(255, 117, 31, 0.50), 0 0 20px rgba(255, 117, 31, 0.25);
+  }
+  .btn-primary-dark:hover {
+    box-shadow: 0 12px 35px -2px rgba(255, 117, 31, 0.70), 0 0 30px rgba(255, 117, 31, 0.40);
+  }
+
+  /* Secondary Button */
+  .btn-secondary-dark {
+    @apply inline-flex items-center justify-center font-bold text-cinematic-text active:scale-[0.98] transition-all duration-300 rounded-xl px-7 py-3.5 text-base shadow-sm;
+    background: linear-gradient(180deg, #102337 0%, #0C1B2A 100%);
+    border: 1px solid rgba(4, 156, 254, 0.25);
+  }
+  .btn-secondary-dark:hover {
+    background: #0C1B2A;
+    border-color: rgba(4, 156, 254, 0.5);
+    box-shadow: 0 0 20px rgba(4, 156, 254, 0.25);
+  }
+
+  /* Plan Card Base - Tech Luxury */
+  .plan-card-dark {
+    @apply relative flex flex-col rounded-3xl p-7 sm:p-10 transition-all duration-300 backdrop-blur-md;
+    background: linear-gradient(180deg, rgba(16, 35, 55, 0.85) 0%, rgba(12, 27, 42, 0.95) 100%);
+    border: 1px solid rgba(4, 156, 254, 0.20);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  }
+  .plan-card-dark:hover {
+    border-color: rgba(4, 156, 254, 0.45);
+    box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.85), 0 0 30px -5px rgba(4, 156, 254, 0.30), inset 0 1px 0 0 rgba(4, 156, 254, 0.35);
+  }
+
+  /* Feature Card - Tech */
+  .feature-card-dark {
+    @apply relative flex flex-col rounded-2xl p-6 sm:p-8 transition-all duration-300 backdrop-blur-sm;
+    background: linear-gradient(180deg, rgba(16, 35, 55, 0.75) 0%, rgba(12, 27, 42, 0.90) 100%);
+    border: 1px solid rgba(4, 156, 254, 0.16);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+  .feature-card-dark:hover {
+    border-color: rgba(4, 156, 254, 0.45);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(4, 156, 254, 0.28), inset 0 1px 0 0 rgba(4, 156, 254, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Bonus Card - Tech */
+  .bonus-card-dark {
+    @apply relative flex flex-col rounded-2xl p-6 sm:p-7 transition-all duration-300 backdrop-blur-sm;
+    background: linear-gradient(180deg, rgba(16, 35, 55, 0.80) 0%, rgba(12, 27, 42, 0.92) 100%);
+    border: 1px solid rgba(4, 156, 254, 0.16);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+  .bonus-card-dark:hover {
+    border-color: rgba(4, 156, 254, 0.45);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(4, 156, 254, 0.28), inset 0 1px 0 0 rgba(4, 156, 254, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Guarantee Block - Tech */
+  .guarantee-card-dark {
+    @apply rounded-2xl p-6 sm:p-8 transition-all duration-300 backdrop-blur-sm;
+    background: linear-gradient(180deg, rgba(16, 35, 55, 0.80) 0%, rgba(12, 27, 42, 0.92) 100%);
+    border: 1px solid rgba(4, 156, 254, 0.16);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+  .guarantee-card-dark:hover {
+    border-color: rgba(4, 156, 254, 0.35);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(4, 156, 254, 0.20);
+  }
+
+  /* Divisórias Luminosas Tecnológicas */
+  .cinematic-divider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, rgba(4, 156, 254, 0.35), transparent);
+    pointer-events: none;
+  }
+}
+
+/* ========================================================================= */
+/* ANIMAÇÕES CINEMATOGRÁFICAS DO INFINITO, GLOW E SHIMMER                    */
+/* ========================================================================= */
+@keyframes energyFlow {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.45;
+    filter: drop-shadow(0 0 25px rgba(4, 156, 254, 0.4)) drop-shadow(0 0 50px rgba(254, 107, 0, 0.2));
+  }
+  50% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 45px rgba(4, 156, 254, 0.75)) drop-shadow(0 0 80px rgba(254, 107, 0, 0.35));
+  }
+}
+
+@keyframes orbitFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.infinity-path-animated {
+  stroke-dasharray: 120 60;
+  animation: energyFlow 16s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+.infinity-glow-box {
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: orbitFloat 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+.shimmer-border {
+  background-size: 250% 250%;
+  animation: borderShimmer 4s ease infinite;
+}
+
+/* ========================================================================= */
+/* ELEMENTO DO INFINITO: ANIMAÇÃO DE ENERGIA CONTÍNUA (HERO & DESTAQUES)     */
+/* ========================================================================= */
+.infinity-stage {
+  position: relative;
+  isolation: isolate;
+}
+
+.infinity-stream-primary {
+  animation: energyFlowPrimary 7s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+.infinity-stream-secondary {
+  animation: energyFlowSecondary 7s linear infinite;
+  animation-delay: -3.5s;
+  will-change: stroke-dashoffset;
+}
+
+@keyframes energyFlowPrimary {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes energyFlowSecondary {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Pulso de brilho suave para o núcleo do infinito */
+.infinity-pulse-aura {
+  animation: auraBreathe 5s ease-in-out infinite alternate;
+  will-change: opacity;
+}
+
+@keyframes auraBreathe {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
+
+/* Hero Portrait Cinematic Blending & Cutout Stage */
+.hero-portrait-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-portrait-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(4, 156, 254, 0.35) 0%, rgba(255, 117, 31, 0.12) 40%, rgba(7, 17, 31, 0) 72%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-cutout-image {
+  position: relative;
+  z-index: 10;
+  mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 98%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 98%);
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 25px rgba(4, 156, 254, 0.25));
+}
+
+/* 3D Floating Perspective Cards for Hero */
+.perspective-stage {
+  perspective: 1200px;
+}
+
+.floating-banner-card {
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.floating-banner-card:hover {
+  transform: translateY(-8px) scale(1.05) rotate(0deg) !important;
+  z-index: 30 !important;
+  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.95), 0 0 35px rgba(4, 156, 254, 0.5) !important;
+}
+
+.floating-banner-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes floatSlow1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-4deg);
+  }
+}
+
+@keyframes floatSlow2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(8deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(6deg);
+  }
+}
+
+@keyframes floatSlow3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(-8deg);
+  }
+}
+
+@keyframes floatSlow4 {
+  0%, 100% {
+    transform: translateY(0px) rotate(12deg);
+  }
+  50% {
+    transform: translateY(-11px) rotate(10deg);
+  }
+}
+
+.animate-float-1 {
+  animation: floatSlow1 7s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: floatSlow2 8.5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: floatSlow3 6.8s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: floatSlow4 9.2s ease-in-out infinite;
+}
+
+/* Glass Specular Overlay */
+.card-specular {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-specular::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .infinity-stream-primary,
+  .infinity-stream-secondary,
+  .infinity-pulse-aura,
+  .infinity-path-animated,
+  .infinity-glow-box,
+  .float-slow,
+  .shimmer-border,
+  .animate-float-1,
+  .animate-float-2,
+  .animate-float-3,
+  .animate-float-4 {
+    animation: none !important;
+    stroke-dasharray: none !important;
+    opacity: 0.6 !important;
+  }
+}
+
+/* Scroll reveal helper classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar for carousel & overflow */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
