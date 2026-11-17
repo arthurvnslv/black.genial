@@ -64,7 +64,7 @@ export const CAMPAIGN_CONFIG = {
     plans: {
       normal: {
         id: 'plano-normal',
-        name: 'PLANO NORMAL',
+        name: 'TURMA COMPLETA (SUPERMED E MED TRADICIONAIS)',
         badge: 'ACESSO ANUAL',
         priceOriginal: 'R$ 2.820,00',
         priceInstallments: '12x de R$ 149,00',
