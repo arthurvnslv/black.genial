@@ -201,12 +201,15 @@
               </a>
             </div>
 
-            <!-- Imagem em destaque no mobile (centralizada com precisão no personagem Paulinho) -->
+            <!-- Imagem em destaque no mobile (enquadramento perfeitamente alinhado ao personagem e composição central) -->
             <div
               class="lg:hidden w-full my-7 relative rounded-2xl overflow-hidden border border-[rgba(4,156,254,0.3)] shadow-[0_16px_45px_rgba(2,8,23,0.95)] bg-[#020817]">
-              <div class="relative w-full aspect-[4/3] xs:aspect-[16/10] sm:aspect-[16/9] overflow-hidden">
-                <img src="/assets/hero-image.jpg" alt="Professor Paulinho com as turmas do Genial e símbolo do infinito"
-                  class="w-full h-full object-cover object-[78%_38%] select-none" loading="eager" />
+              <div class="relative w-full aspect-[1.2/1] overflow-hidden">
+                <picture class="w-full h-full block">
+                  <source media="(max-width: 1023px)" srcset="/assets/hero-mobile.jpg" />
+                  <img src="/assets/hero-image.jpg" alt="Professor Paulinho com as turmas do Genial e símbolo do infinito"
+                    class="w-full h-full object-cover object-center select-none" loading="eager" />
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-[#020817]/60 via-transparent to-transparent pointer-events-none">
                 </div>
