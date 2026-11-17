@@ -125,11 +125,11 @@
     <!-- Configurações Comerciais Oficiais da Campanha -->
     <script>
       window.BLACK_GENIAL_CONFIG = {
-        checkoutNormal: "#checkout-plano-normal",
-        checkoutAtePassar: "#checkout-plano-ate-passar",
+        checkoutNormal: "https://checkout.berrypay.com.br/gNKHmA_M",
+        checkoutAtePassar: "https://checkout.berrypay.com.br/-eSKr9_N",
         precos: {
-          normal: { parcelas: "12x", valorParcela: "R$ 149,90", aVista: "Consulte condições" },
-          atePassar: { parcelas: "12x", valorParcela: "R$ 249,90", aVista: "Consulte condições" }
+          normal: { parcelas: "12x", valorParcela: "R$ 149,00", aVista: "Consulte condições" },
+          atePassar: { parcelas: "12x", valorParcela: "R$ 199,00", aVista: "Consulte condições" }
         },
         datas: { liberacaoAcesso: "01/12", bonusPrimeiroDia: "17/11" }
       };
@@ -208,7 +208,8 @@
               <div class="relative w-full aspect-[1.2/1] overflow-hidden">
                 <picture class="w-full h-full block">
                   <source media="(max-width: 1023px)" srcset="/assets/hero-mobile.jpg" />
-                  <img src="/assets/hero-image.jpg" alt="Professor Paulinho com as turmas do Genial e símbolo do infinito"
+                  <img src="/assets/hero-image.jpg"
+                    alt="Professor Paulinho com as turmas do Genial e símbolo do infinito"
                     class="w-full h-full object-cover object-center select-none" loading="eager" />
                 </picture>
                 <div
@@ -435,11 +436,14 @@
                 </div>
 
                 <div class="my-6 py-5 px-6 bg-[#020817]/90 rounded-2xl border border-[rgba(4,156,254,0.2)]">
+                  <div class="mb-1 text-xs text-[#B9C9DF]/80 font-medium">
+                    De <span class="line-through text-[#B9C9DF]/60">R$ 2.820,00</span> por apenas:
+                  </div>
                   <div class="flex items-baseline gap-2">
                     <span class="text-sm sm:text-base font-semibold text-[#B9C9DF]">12x de</span>
                     <span
                       class="text-3xl sm:text-4xl font-black text-[#049CFE] drop-shadow-[0_0_15px_rgba(4,156,254,0.4)]">R$
-                      149,90</span>
+                      149,00</span>
                   </div>
                   <p class="text-xs text-[#B9C9DF] mt-1 font-medium">Valores à vista e formas de pagamento sob consulta
                     no checkout.</p>
@@ -472,7 +476,7 @@
 
               <div>
                 <a class="w-full bg-[#087CFF] hover:bg-[#049CFE] text-white hover:text-white font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl shadow-[0_0_25px_rgba(4,156,254,0.35)] border border-[#049CFE]/40 transition-all transform hover:-translate-y-0.5 text-center block"
-                  href="#planos">
+                  href="https://checkout.berrypay.com.br/gNKHmA_M" target="_blank" rel="noopener noreferrer">
                   APROVEITAR A OFERTA
                 </a>
                 <p class="text-[11px] font-semibold text-center text-[#B9C9DF]/70 mt-3 uppercase tracking-wider">
@@ -485,12 +489,16 @@
             <div
               class="relative p-[2.5px] rounded-3xl bg-gradient-to-b from-[#FF7900] via-[#FF9A24] to-[#049CFE] shadow-[0_0_50px_rgba(255,121,0,0.5),0_0_90px_rgba(4,156,254,0.3)] transform md:-translate-y-3 transition-all hover:shadow-[0_0_70px_rgba(255,121,0,0.7),0_0_120px_rgba(4,156,254,0.45)]">
               <!-- Glow de fundo extra intenso atrás do card -->
-              <div class="absolute -inset-1 bg-gradient-to-r from-[#FF7900]/40 to-[#049CFE]/40 rounded-3xl blur-xl opacity-75 -z-10 pointer-events-none"></div>
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-[#FF7900]/40 to-[#049CFE]/40 rounded-3xl blur-xl opacity-75 -z-10 pointer-events-none">
+              </div>
 
               <div
                 class="relative bg-[#071938] rounded-[22px] p-8 lg:p-10 flex flex-col justify-between h-full overflow-hidden">
                 <!-- Luz interna sutil de topo -->
-                <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-32 bg-[#FF7900]/25 rounded-full blur-3xl pointer-events-none"></div>
+                <div
+                  class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-32 bg-[#FF7900]/25 rounded-full blur-3xl pointer-events-none">
+                </div>
 
                 <!-- Badge Superior Neon de Maior Preferência -->
                 <div
@@ -507,19 +515,21 @@
                     </span>
                     <h3 class="text-2xl sm:text-3xl font-black text-white mt-1 flex items-center gap-2">
                       PLANO ATÉ PASSAR
-                      <span class="text-[#049CFE] text-2xl font-black tracking-normal drop-shadow-[0_0_12px_#049CFE]">∞</span>
+                      <span
+                        class="text-[#049CFE] text-2xl font-black tracking-normal drop-shadow-[0_0_12px_#049CFE]">∞</span>
                     </h3>
                     <p class="text-xs sm:text-sm text-[#D3E2F4] mt-1 font-medium">
                       Matrícula única e acesso até a aprovação, conforme as regras do plano.
                     </p>
                   </div>
 
-                  <div class="my-6 py-6 px-6 bg-gradient-to-b from-[#09224E] to-[#05142E] rounded-2xl border-2 border-[#FF7900]/60 shadow-[0_0_30px_rgba(255,121,0,0.3)]">
+                  <div
+                    class="my-6 py-6 px-6 bg-gradient-to-b from-[#09224E] to-[#05142E] rounded-2xl border-2 border-[#FF7900]/60 shadow-[0_0_30px_rgba(255,121,0,0.3)]">
                     <div class="flex items-baseline gap-2">
                       <span class="text-sm sm:text-base font-bold text-[#E2EDF9]">12x de</span>
                       <span
                         class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF7900] via-[#FFA842] to-[#FFC47D] drop-shadow-[0_0_30px_rgba(255,121,0,0.8)]">R$
-                        249,90</span>
+                        199,00</span>
                     </div>
                     <p class="text-xs text-[#E2EDF9] mt-1.5 font-medium">Sem renovações anuais. Valores à vista sob
                       consulta no checkout.</p>
@@ -527,44 +537,54 @@
 
                   <div class="space-y-4 pt-2 mb-8">
                     <div class="flex items-start gap-3">
-                      <span class="material-symbols-outlined text-[#FF7900] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(255,121,0,0.7)]">verified</span>
-                      <span class="text-sm text-white font-extrabold tracking-wide">Estude até ser aprovado: sem pagar nova matrícula todo
+                      <span
+                        class="material-symbols-outlined text-[#FF7900] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(255,121,0,0.7)]">verified</span>
+                      <span class="text-sm text-white font-extrabold tracking-wide">Estude até ser aprovado: sem pagar
+                        nova matrícula todo
                         ano</span>
                     </div>
                     <div class="flex items-start gap-3">
-                      <span class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
-                      <span class="text-sm text-white font-semibold">Acesso contínuo a todas as turmas, atualizações e novos
+                      <span
+                        class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
+                      <span class="text-sm text-white font-semibold">Acesso contínuo a todas as turmas, atualizações e
+                        novos
                         conteúdos</span>
                     </div>
                     <div class="flex items-start gap-3">
-                      <span class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
-                      <span class="text-sm text-[#E2EDF9] font-medium">Mais de 8 aulas ao vivo por semana + acervo completo</span>
+                      <span
+                        class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
+                      <span class="text-sm text-[#E2EDF9] font-medium">Mais de 8 aulas ao vivo por semana + acervo
+                        completo</span>
                     </div>
                     <div class="flex items-start gap-3">
-                      <span class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
-                      <span class="text-sm text-[#E2EDF9] font-medium">Correções assistidas de redação, simulados e mentorias
+                      <span
+                        class="material-symbols-outlined text-[#049CFE] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(4,156,254,0.7)]">check_circle</span>
+                      <span class="text-sm text-[#E2EDF9] font-medium">Correções assistidas de redação, simulados e
+                        mentorias
                         médicas</span>
                     </div>
                     <div class="flex items-start gap-3">
-                      <span class="material-symbols-outlined text-[#FF9A24] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(255,154,36,0.7)]">stars</span>
-                      <span class="text-sm text-[#FFD59E] font-bold">Elegível ao kit físico exclusivo (para os 10 primeiros
+                      <span
+                        class="material-symbols-outlined text-[#FF9A24] text-xl shrink-0 mt-0.5 drop-shadow-[0_0_8px_rgba(255,154,36,0.7)]">stars</span>
+                      <span class="text-sm text-[#FFD59E] font-bold">Elegível ao kit físico exclusivo (para os 10
+                        primeiros
                         compradores)</span>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <a class="relative group overflow-hidden w-full bg-gradient-to-r from-[#FF7900] via-[#FF8510] to-[#FF9A24] hover:brightness-110 text-white font-black text-sm uppercase tracking-wider py-4.5 rounded-xl shadow-[0_0_40px_rgba(255,121,0,0.75)] transition-all transform hover:-translate-y-1 text-center block border border-[#ffd59e]/70"
-                    href="#planos">
-                    <span class="relative z-10 flex items-center justify-center gap-2">
+                  <a class="relative group overflow-hidden w-full bg-gradient-to-r from-[#FF7900] via-[#FF8510] to-[#FF9A24] hover:brightness-110 text-white font-black text-base sm:text-lg uppercase tracking-wider py-5 sm:py-6 px-6 rounded-2xl shadow-[0_0_50px_rgba(255,121,0,0.85)] hover:shadow-[0_0_70px_rgba(255,121,0,1)] transition-all transform hover:-translate-y-1 text-center block border-2 border-[#ffd59e]/80"
+                    href="https://checkout.berrypay.com.br/-eSKr9_N" target="_blank" rel="noopener noreferrer">
+                    <span class="relative z-10 flex items-center justify-center gap-2.5">
                       APROVEITAR A OFERTA
-                      <span class="material-symbols-outlined text-[18px]">bolt</span>
+                      <span class="material-symbols-outlined text-[22px] sm:text-[24px]">bolt</span>
                     </span>
                     <div
                       class="absolute inset-0 -translate-x-full group-hover:translate-x-full duration-700 bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform">
                     </div>
                   </a>
-                  <p class="text-[11px] font-bold text-center text-[#FFD59E] mt-3 uppercase tracking-wider">
+                  <p class="text-[11px] font-bold text-center text-[#FFD59E] mt-3.5 uppercase tracking-wider">
                     Vagas limitadas pelas regras da campanha
                   </p>
                 </div>
@@ -1309,15 +1329,24 @@
   <!-- BARRA INFERIOR FIXA PARA DISPOSITIVOS MÓVEIS (ALTA CONVERSÃO)             -->
   <!-- ========================================================================= -->
   <div id="sticky-mobile-cta"
-    class="md:hidden fixed bottom-0 inset-x-0 z-50 p-3 bg-[#06132B]/95 backdrop-blur-md border-t border-[#049CFE]/30 shadow-2xl transition-all duration-300 translate-y-full opacity-0 pointer-events-none">
+    class="md:hidden fixed bottom-0 inset-x-0 z-50 p-3 bg-gradient-to-r from-[#06132B]/95 via-[#091E42]/95 to-[#06132B]/95 backdrop-blur-xl border-t-2 border-[#FF7900]/50 shadow-[0_-8px_30px_rgba(255,121,0,0.3)] transition-all duration-300 translate-y-full opacity-0 pointer-events-none">
     <div class="flex items-center justify-between gap-3">
       <div class="flex-1 min-w-0">
-        <p class="text-[11px] font-extrabold uppercase tracking-wider text-[#FF7900]">Black Genial 2026</p>
-        <p class="text-xs font-bold text-white truncate">Planos a partir de 12x R$ 149,90</p>
+        <div class="flex items-center gap-1.5">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#FF7900] animate-ping"></span>
+          <p class="text-[10px] font-black uppercase tracking-wider text-[#FF9A24]">Plano Até Passar <span
+              class="text-[#049CFE] font-bold">∞</span></p>
+        </div>
+        <p class="text-xs font-black text-white truncate drop-shadow-[0_0_10px_rgba(255,121,0,0.5)]">
+          Matrícula Única: <span class="text-[#FF9A24]">12x R$ 199,00</span>
+        </p>
       </div>
-      <a href="#planos"
-        class="flex-shrink-0 inline-flex items-center justify-center font-bold text-xs text-white bg-gradient-to-r from-[#FF7900] to-[#FF9A24] active:scale-95 transition-all rounded-xl px-5 py-3 shadow-[0_0_20px_rgba(255,121,0,0.5)] border border-[#ffd59e]/40">
-        MATRICULAR
+      <a href="https://checkout.berrypay.com.br/-eSKr9_N" target="_blank" rel="noopener noreferrer"
+        class="flex-shrink-0 inline-flex items-center justify-center font-black text-xs text-white bg-gradient-to-r from-[#FF7900] via-[#FF8510] to-[#FF9A24] active:scale-95 transition-all rounded-xl px-5 py-3 shadow-[0_0_25px_rgba(255,121,0,0.7)] border border-[#ffd59e]/60">
+        <span class="flex items-center gap-1">
+          MATRICULAR
+          <span class="material-symbols-outlined text-[15px]">bolt</span>
+        </span>
       </a>
     </div>
   </div>

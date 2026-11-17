@@ -66,11 +66,12 @@ export const CAMPAIGN_CONFIG = {
         id: 'plano-normal',
         name: 'PLANO NORMAL',
         badge: 'ACESSO ANUAL',
-        priceInstallments: '12x de R$ 149,90',
+        priceOriginal: 'R$ 2.820,00',
+        priceInstallments: '12x de R$ 149,00',
         priceCash: null, // A definir oficialmente pela equipe comercial
         description: 'Acesso pelo período contratado.',
         ctaText: 'APROVEITAR A OFERTA',
-        checkoutUrl: '#', // Inserir link oficial do checkout do Plano Normal
+        checkoutUrl: 'https://checkout.berrypay.com.br/gNKHmA_M',
         features: [
           'Acesso completo a todas as turmas durante o período contratado',
           'Mais de 8 aulas ao vivo semanais + acervo de gravações',
@@ -84,11 +85,11 @@ export const CAMPAIGN_CONFIG = {
         id: 'plano-ate-passar',
         name: 'PLANO ATÉ PASSAR',
         badge: 'MAIS RECOMENDADO',
-        priceInstallments: '12x de R$ 249,90',
+        priceInstallments: '12x de R$ 199,00',
         priceCash: null, // A definir oficialmente pela equipe comercial
         description: 'Matrícula única e acesso até a aprovação, conforme as regras do plano.',
         ctaText: 'APROVEITAR A OFERTA',
-        checkoutUrl: '#', // Inserir link oficial do checkout do Plano Até Passar
+        checkoutUrl: 'https://checkout.berrypay.com.br/-eSKr9_N',
         features: [
           'Matrícula única: continue estudando até conquistar sua aprovação',
           'Sem necessidade de refazer matrícula ou pagar novos planos anuais',
